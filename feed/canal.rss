@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <!-- Información general del canal RSS -->
+    <title>Academia Poniente - Canal de Noticias</title>
+    <link>https://academiaponiente.com</link>
+    <description>Últimas noticias y actualizaciones de la Academia de Formación Poniente</description>
+    <language>es</language>
+    <managingEditor>info@academiaponiente.com (Academia Poniente)</managingEditor>
+    <pubDate>Wed, 11 Dec 2024 10:00:00 +0000</pubDate>
+    <category>Investigaciones actuales</category>
+    <category>Experiencias de la vida</category>
+    <atom:link href="https://academiaponiente.com/feed/canal.rss" rel="self" type="application/rss+xml" />
+
+    <!-- Primera entrada del canal RSS -->
+    <item>
+      <title>Startup Andaluza Revoluciona la Energía Renovable</title>
+      <link>https://academiaponiente.com/noticias/startup-andaluza</link>
+      <description>Una nueva empresa en Andalucía está transformando la producción de energía renovable con tecnología avanzada.</description>
+      <category>Investigaciones actuales</category>
+      <pubDate>Thu, 12 Dec 2024 09:00:00 +0000</pubDate>
+      <guid>https://academiaponiente.com/noticias/startup-andaluza</guid>
+    </item>
+
+    <!-- Segunda entrada del canal RSS -->
+    <item>
+      <title>El impacto de la Inteligencia Artificial en nuestra sociedad. Retos y oportunidades</title>
+      <link>https://www.csic.es/es/actualidad-del-csic/el-impacto-de-la-inteligencia-artificial-en-nuestra-sociedad-retos-y-oportunidades</link>
+      <description>La inteligencia artificial está revolucionando la investigación científica y presenta retos y oportunidades únicas para la humanidad.</description>
+      <author>csierra@institutoia.com (Carles Sierra)</author>
+      <pubDate>Mon, 03 Jun 2019 10:00:00 +0000</pubDate>
+      <guid>https://www.csic.es/es/actualidad-del-csic/el-impacto-de-la-inteligencia-artificial-en-nuestra-sociedad-retos-y-oportunidades</guid>
+    </item>
+  </channel>
+</rss>

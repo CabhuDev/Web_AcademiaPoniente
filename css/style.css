@@ -1,0 +1,247 @@
+/* Archivo: style.css */
+
+/* Variables de colores */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #0056b3;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --light-text-color: #777;
+    --white-color: #ffffff;
+    --border-color: #ccc;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: var(--white-color);
+    padding: 40px 30px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 100px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--primary-color);
+    text-align: center;
+}
+header header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    align-items: center;
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+
+header .logo img {
+    
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Sección de inicio */
+main {
+    padding: 10px 0px;
+}
+
+.banner {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* Sección de servicios */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio {
+    /* Esta línea ajusta el tamaño de los elementos de la galería para que ocupen el 25% del ancho del contenedor, restando 20px para el espacio entre ellos. Utiliza flexbox para permitir que los elementos se ajusten y distribuyan uniformemente dentro del contenedor. */
+    /* Ajusta el tamaño de los elementos de la galería para que ocupen el 25% del ancho del contenedor, con un espacio de 20px entre ellos */
+    flex: 1 1 calc(25% - 20px);
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+    color: var(--white-color);
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servicio p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--light-text-color);
+}
+
+/* Sección de contacto */
+form {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.radio-content {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: left;
+    align-items: center;
+}
+
+.radio-content h4 {
+    font-weight: 300;
+}
+
+.btn-form {
+    grid-column: span 2;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--light-text-color);
+}
+
+footer a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Poniente - Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Encabezado con logotipo y menú -->
+    <header>
+        <header-container>
+            <h1>Academia Poniente</h1>
+            <nav>
+                <ul>
+                    <li><a href="Cabello_Hurtado_Pablo_LM02.pdf" target="_blank">Inicio</a></li>
+                    <li><a href="Cabello_Hurtado_Pablo_LM02.pdf" target="_blank">Servicios</a></li>
+                    <li><a href="Cabello_Hurtado_Pablo_LM02.pdf" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </header-container>
+        <div class="logo">
+            <img src="img/logo.png" alt="Academia Poniente logo" class="logo">
+        </div>
+    
+    </header>
+
+    <!-- Sección de inicio -->
+    <main>
+        <div class="logo">
+            <img src="img/banner.jpg" alt="Academia Poniente Banner" class="banner">
+        </div>
+        <section id="inicio">           
+            <h4>Bienvenidos a la Academia de Formación Poniente, donde ofrecemos la mejor calidad educativa para el futuro de nuestros alumnos.</h4>
+            <ol type="1">
+                <li>Ciencias:
+                    <ol type="a">
+                        <li>Matemáticas</li>
+                        <li>Física</li>
+                    </ol>
+                </li>
+                <li>Idiomas:
+                    <ol type="a">
+                        <li>Inglés</li>
+                        <li>Francés</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Sección de servicios -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="galeria">
+                
+                <div class="servicio">
+                    <img src="img/science.png" alt="Ciencias">
+                    <p>Ciencias</p>
+                </div>
+                <div class="servicio">
+                    <img src="img/language.png" alt="Idiomas">
+                    <p>Idiomas</p>
+                </div>
+                <div class="servicio">
+                    <img src="img/maths.png" alt="Letras">
+                    <p>Matemáticas</p>
+                </div>
+                <div class="servicio">
+                    <img src="img/apoyo.jpeg" alt="Clases de Apoyo">
+                    <p>Clases de Apoyo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+                
+                
+                <div class="radio-content">
+                    <h4>Recibir respuesta por:</h4>
+                    <div>
+                        <input type="radio" id="suscripcion-email" name="suscripcion" value="email">
+                        <label for="suscripcion-email">Email</label>
+                        <input type="radio" id="suscripcion-telefono" name="suscripcion" value="telefono">
+                        <label for="suscripcion-telefono">Teléfono</label>
+                    </div>
+                </div>
+                
+                <div class="btn-form">
+                    <button type="submit">Enviar</button>
+                    <button type="submit">Borrar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página con información de contacto y RSS -->
+    <footer>
+        <p>Academia de Formación Poniente - Dirección: Calle Ejemplo 123, Teléfono: 123456789, Email: info@academiaponiente.com</p>
+        <p>Desarrollado por: Pablo Cabello Hurtado</p>
+        <a href="feed/canal.rss" target="_blank">
+            <img src="img/rss_logo.png" alt="RSS Feed">
+        </a>
+    </footer>
+</body>
+</html>
